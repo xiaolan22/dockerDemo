@@ -4,6 +4,6 @@ node_js:
 install: yarn install
 script:
   - yarn build
-  - docker build -t maybush/dockerdemo .
+  - docker build -t maybush/dockerdemo2 .
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
-  - docker push maybush/dockerdemo
+  - docker push maybush/dockerdemo2
